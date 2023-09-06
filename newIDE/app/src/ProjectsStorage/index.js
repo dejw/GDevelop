@@ -175,4 +175,9 @@ export type StorageProvider = {|
   createResourceOperations?: ({|
     authenticatedUser: AuthenticatedUser,
   |}) => ResourcesActionsMenuBuilder,
+  /** Resources external changes */
+  setupResourcesWatcher?: (
+    fileMetadata: FileMetadata,
+    callback: () => void
+  ) => () => void,
 |};
