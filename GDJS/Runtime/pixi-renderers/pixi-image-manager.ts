@@ -281,7 +281,7 @@ namespace gdjs {
         );
         return;
       }
-      this._loadTexture(resource);
+      await this._loadTexture(resource);
     }
 
     /**
